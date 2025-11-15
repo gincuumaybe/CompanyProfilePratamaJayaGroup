@@ -1,0 +1,142 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    #home .content h1 {
+        font-size: 2rem;
+    }
+    #home .content p {
+        font-size: 1rem;
+    }
+}
+
+.custom-text .navbar-brand,
+.custom-text .navbar-brand span {
+    color: #004580;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#navbarNav .nav-link {
+    color: #004580;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#navbarNav .nav-link:hover {
+    color: #ec6206;
+}
+
+#navbarNav .nav-link.active {
+    color: #ec6206 !important; /* merah saat aktif */
+}
+
+#navbarNav .nav-link.contact-btn {
+    color: #ffffff !important; /* perlu untuk override default link */
+    background-color: #ffa722;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s;
+}
+
+#navbarNav .nav-link.contact-btn:hover {
+    background-color: #e5941e;
+    text-decoration: none;
+}
+
+#home {
+    position: relative;
+    height: 80vh; /* tinggi section 80% layar */
+    overflow: hidden; /* biar gambar tidak keluar section */
+}
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* gambar tetap proporsional */
+}
+
+#home .top-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #004580, transparent);
+    z-index: 1;
+}
+
+#home .bottom-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000e1a, transparent);
+    z-index: 1;
+}
+
+#home .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+#home .content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+#home .content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#cards .card {
+    border-radius: 12px;
+    transition: transform 0.3s;
+    overflow: hidden; /* supaya nomor dan gambar tetap rapi */
+}
+
+#cards .card:hover {
+    transform: translateY(-10px);
+}
+
+#cards .card-body p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500; /* medium */
+    color: #ffffff; /* kalau mau teks putih di atas background #FFA722 */
+    font-size: 0.9rem; /* bisa disesuaikan */
+    margin-bottom: 0.75rem; /* sama seperti mb-3 */
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* maksimal 2 baris */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#cards .card-number {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800; /* ExtraBold seperti navbar */
+    color: #ec6206 !important;
+    margin: 10px;
+}
