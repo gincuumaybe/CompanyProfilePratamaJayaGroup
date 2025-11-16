@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-item mx-4">
-                    <a class="nav-link" href="/services">Daftar Layanan</a>
+                    <a class="nav-link" href="#services">Daftar Layanan</a>
                 </li>
 
                 <li class="nav-item mx-4">
@@ -25,7 +25,7 @@
                 </li>
 
                 <li class="nav-item mx-4">
-                    <a class="nav-link contact-btn" href="/contact">Kontak Kami</a>
+                    <a class="nav-link contact-btn" href="#location">Kontak Kami</a>
                 </li>
 
             </ul>
