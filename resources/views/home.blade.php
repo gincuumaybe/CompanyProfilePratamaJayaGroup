@@ -1,11 +1,77 @@
 @extends('layouts.app')
 @section('content')
-    <section id="home" class="position-relative">
+    {{-- <section id="home" class="position-relative">
         <div class="gradient-overlay"></div>
         <div class="content">
             <h1>SERVICE AC PANGGILAN TERPERCAYA</h1>
             <p>PRATAMA JAYA GRUP adalah spesialis dalam berbagai layanan AC, perbaikan AC, pembersihan, pemasangan,
                 perawatan, dan instalasi.</p>
+        </div>
+    </section> --}}
+    <section id="home">
+        <div class="photo home1"></div>
+        <div class="photo home2"></div>
+        <div class="photo home3"></div>
+        <div class="photo home4"></div>
+        <div class="home-text">
+            <h1>SERVICE AC PANGGILAN TERPERCAYA</h1>
+            <p>PRATAMA JAYA GRUP adalah spesialis dalam berbagai layanan AC, perbaikan AC, pembersihan, pemasangan,
+                perawatan, dan instalasi.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="parent-services-list">
+            <div class="child-header-text">Layanan Kami</div>
+            <div class="child-boxes1">
+                <div class="item-boxes1">
+                    <div class="item-number">1</div>
+                    <div class="item-content">Instalasi AC</div>
+                    <div class="item-footer">
+                        <span class="material-symbols-outlined">
+                            climate_mini_split
+                        </span>
+                    </div>
+                </div>
+                <div class="item-boxes1">
+                    <div class="item-number">2</div>
+                    <div class="item-content">Service AC</div>
+                    <div class="item-footer">
+                        <span class="material-symbols-outlined">
+                            handyman
+                        </span>
+                    </div>
+                </div>
+                <div class="item-boxes1">
+                    <div class="item-number">3</div>
+                    <div class="item-content">Pergantian Sparepart</div>
+                    <div class="item-footer">
+                        <span class="material-symbols-outlined">
+                            home_improvement_and_tools
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="child-boxes2">
+                <div class="item-boxes2">
+                    <div class="item-number">4</div>
+                    <div class="item-content">Instalasi AC</div>
+                    <div class="item-footer">
+                        <span class="material-symbols-outlined">
+                            gas_meter
+                        </span>
+                    </div>
+                </div>
+                <div class="item-boxes2">
+                    <div class="item-number">5</div>
+                    <div class="item-content">Service AC</div>
+                    <div class="item-footer">
+                        <span class="material-symbols-outlined">
+                            soap
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -19,7 +85,7 @@
         ];
     @endphp
 
-    <section id="services" class="container py-5 position-relative">
+    {{-- <section id="services" class="container py-5 position-relative">
         <div class="row justify-content-center g-4">
             @foreach ($cards as $index => $card)
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center">
@@ -46,9 +112,9 @@
                 </div>
             @endforeach
         </div>
-    </section>
+    </section> --}}
 
-    <section id="location" class="position-relative">
+    {{-- <section id="location" class="position-relative">
         <div class="bg-wrapper"></div>
         <div class="content">
             <div class="map-responsive">
@@ -65,42 +131,6 @@
                 <div class="info-card">
                     <span class="material-symbols-outlined">call</span>
                     <p>+6287823873079</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- <section id="features">
-        <div class="features-container">
-            <!-- Left Card: Images -->
-            <div class="features-left">
-                <div class="shape-card">
-                    <img src="circle.png" alt="Circle" />
-                </div>
-                <div class="shape-card blue-card"></div>
-                <div class="shape-card">
-                    <img src="triangle.png" alt="Triangle" />
-                </div>
-                <div class="shape-card blue-card"></div>
-            </div>
-
-            <!-- Right Card: Scrollable List -->
-            <div class="features-right">
-                <h3>Main Context Heading</h3>
-                <div class="features-list">
-                    <div class="feature-item">
-                        <h2>Item 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Item 2</h2>
-                        <p>Aliquam tincidunt mauris eu risus.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Item 3</h2>
-                        <p>Vestibulum auctor dapibus neque.</p>
-                    </div>
-                    <!-- Add more items as needed -->
                 </div>
             </div>
         </div>
