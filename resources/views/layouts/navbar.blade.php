@@ -25,7 +25,7 @@
                 </li>
 
                 <li class="nav-item mx-4">
-                    <a class="nav-link contact-btn" href="#location">Kontak Kami</a>
+                    <a class="nav-link contact-btn" href="#about-us">Kontak Kami</a>
                 </li>
 
             </ul>

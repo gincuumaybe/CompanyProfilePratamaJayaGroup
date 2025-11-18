@@ -1,13 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    {{-- <section id="home" class="position-relative">
-        <div class="gradient-overlay"></div>
-        <div class="content">
-            <h1>SERVICE AC PANGGILAN TERPERCAYA</h1>
-            <p>PRATAMA JAYA GRUP adalah spesialis dalam berbagai layanan AC, perbaikan AC, pembersihan, pemasangan,
-                perawatan, dan instalasi.</p>
-        </div>
-    </section> --}}
     <section id="home">
         <div class="photo home1"></div>
         <div class="photo home2"></div>
@@ -74,6 +66,83 @@
             </div>
         </div>
     </section>
+
+    <section id="about-us">
+        <div class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.2990547851177!2d112.78186087504874!3d-7.32026587198397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7faeb7cc5040f%3A0xd864f553e87d9afe!2sPenjaringan%20Tim.%20V%2C%20Penjaringan%20Sari%2C%20Kec.%20Rungkut%2C%20Surabaya%2C%20Jawa%20Timur%2060297!5e0!3m2!1sen!2sid!4v1763443660966!5m2!1sen!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="address">
+                <div class="address-icon">
+                    <span class="material-symbols-sharp address-icon">
+                        home
+                    </span>
+                </div>
+                <div class="address-text">Desa Bangsal RT 9 RW 2 ( sebelah kanan Kecamatan Bangsal ) Kabupaten Mojokerto,
+                    Jawa Timur</div>
+            </div>
+        </div>
+
+        <div class="about-us-social">
+            <div class="wa">
+                <div class="icon">
+                    <!-- Icon WhatsApp -->
+                    <span class="material-symbols-sharp">chat</span>
+                </div>
+                <div class="name">
+                    WhatsApp
+                </div>
+                <div class="phone">
+                    +62 812-3456-7890
+                </div>
+            </div>
+            <div class="ig">
+                <div class="icon">
+                    <!-- Icon Instagram -->
+                    <span class="material-symbols-sharp">camera_alt</span>
+                </div>
+                <div class="name">
+                    Instagram
+                </div>
+                <div class="phone">
+                    @username_ig
+                </div>
+            </div>
+            <div class="tiktok">
+                <div class="icon">
+                    <!-- Icon TikTok -->
+                    <span class="material-symbols-sharp">music_note</span>
+                </div>
+                <div class="name">
+                    TikTok
+                </div>
+                <div class="phone">
+                    @username_tiktok
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <!-- Parent: review -->
+
+        <div class="photo-review">
+            <!-- 4 child di dalam photo-review -->
+            <div class="photo1">Foto 1</div>
+            <div class="photo2">Foto 2</div>
+            <div class="photo3">Foto 3</div>
+            <div class="photo4">Foto 4</div>
+        </div>
+
+        <div class="text-review">
+            <header>Testimoni Pelanggan</header>
+            <!-- 3 child di dalam text-review -->
+            <div class="text1">Text 1</div>
+            <div class="text2">Text 2</div>
+            <div class="text3">Text 3</div>
+        </div>
+    </section>
+
 
     @php
         $cards = [
